@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body%}
+    
+    <div class="row">
+            <div class="col-sm-12">
+                <h2>Search Results</h2>
+                <br>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Note</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for note in notes %}
+                                    <tr>
+                                        <td>{{ note.Tag }}</td>
+                                        <td>{{ note.Note }}</td>
+                                        <td>{{ note.modified_date }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

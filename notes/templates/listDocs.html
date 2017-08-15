@@ -1,0 +1,63 @@
+{%  extends 'base.html'%}
+
+{% block body %}
+
+    {% if docs %}
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Your Documents</h3>
+            </div>
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">Document Name</th>
+                                    <th style="text-align: center;">Created Date</th>
+                                    <th style="text-align: center;">File Type</th>
+                                    <th style="text-align: center;">Size</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for document in docs %}
+                                    <tr>
+                                        <td style="border-color: lightgrey;">
+                                            <a href="{{ document.docfile.url }}">{{ document.name }}
+                                        </td>
+                                        <td style="border-color: lightgrey;">
+                                            {{ document.my_date }}
+                                        </td>
+                                        <td style="border-color: lightgrey;">
+                                            {{ document.extension }}
+                                        </td>
+                                        <td style="border-color: lightgrey;">
+                                            {{ document.docfile.size }} B
+                                        </td>
+                                        <td style="border-color: lightgrey;">
+                                            <a href="{% url 'notes:deleteDoc' document.pk %}">
+                                            <button type="button" class="btn btn-danger">
+                                                Delete
+                                            </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="container-fluid">
+        <h2>No Documents!!</h2>
+        <a href="{% url 'notes:upload' %}">
+              <button type="button" class="btn btn-success">          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; Add Documents
+            </button>
+        </a>
+        </div>
+    {% endif %}
+
+
+{% endblock%}

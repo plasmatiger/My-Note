@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body%}
+      
+      <div class="container-fluid">
+      	<div class="row">
+      		<div class="container-fluid col-xs-6 shadow" style="width: 24%; margin: 3px; height: 600px;">
+      			<h4>Date Created:</h4>{{ note.my_date}}
+      			<h4>Modified Date:</h4>{{ note.modified_date}}
+                        </br>
+                        <div class="row" style="margin-top: 20px;">
+                              <div class="container-fluid col-xs-6">
+                                    <a href="{% url 'notes:editNoteform' note.pk %}"><button type="button" class="btn btn-success">Edit Note</button></a>
+                              </div>
+                              <div class="container-fluid col-xs-6" >
+                                    <a href="{% url 'notes:deleteNote' note.pk %}" ><button type="button" class="btn btn-danger">Delete Note</button></a>
+                              </div>
+                        </div>
+      		</div>
+      		<div class="container-fluid col-xs-6 shadow" style="width: 75%; margin: 2px; height: 600px;">
+      			<h3>{{ note.Tag}}</h3></br>
+      			<p>{{ note.Note}}</p>
+      		</div>
+      	</div>
+      </div>
+{% endblock%}

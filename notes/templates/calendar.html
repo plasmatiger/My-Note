@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block body%}
+<div class="container-fluid">
+  <div class="row" ">
+    <div class="container-fluid col-xs-6" style="margin-bottom: 25px; border-style: solid;border-color: lightgrey;border-width: 1px; padding: 2px;">
+      <a href="{% url 'notes:allevents' %}"><button type="button" class="btn btn-success">All Events</button></a>
+    </div>
+    <div class="container-fluid col-xs-6" style="margin-bottom: 25px; border-style: solid;border-color: lightgrey;border-width: 1px; padding: 2px;">
+      <a href="{% url 'notes:enterevent'%}"><button type="button" class="btn btn-success">Add new Event</button></a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">   
+  <div class="row">
+       <div class="container-fluid col-xs-6 shadow" style="height: 700px; overflow: auto;">
+       <h2>Calendar</h2>
+       <div class="panel panel-default">
+          <div class="panel-body">
+           {{ calendar }}
+          </div>
+       </div>
+       <a href="{% url 'notes:calendarof' year previous %}"><button type="button" class="btn btn-success" style="float:left;"><< Previous</button></a> 
+       <a href="{% url 'notes:calendarof' year next %}"><button type="button" class="btn btn-success" style="float:right;">&nbsp;&nbsp; Next >> </button></a>
+       </div>
+
+       <div class="container-fluid col-xs-6 shadow" style="height: 700px; overflow: auto;">
+
+       <h2 >Your Events</h2>
+       	 {% if Event %}
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Event</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for event in Event %}
+                                    <tr>
+                                        <td>{{ event.event_date }}
+                                        <h6>Start Date:{{event.start_date}}</h6>
+                                        <h6>End Date:{{event.end_date}}</h6>
+                                        </td>
+                                        <td>{{ event.Tag }}
+                                        <p>{{event.Description | truncatechars:30}}</p>
+                                        <div style="float: left;">             
+                                        <a href="{% url 'notes:editEventform' event.pk %}">
+                                          <button>Edit Event</button>
+                                        </a>
+                                        </div>
+                                        <div style="float: right";>
+                                        <a href="{% url 'notes:deleteEvent' event.pk %}">
+                                          <button>Delete Event</button>
+                                        </a>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+
+              <h3> Not any events for this Month!!!</h3>
+              <a href="{% url 'notes:enterevent'%}"> Create one!!!</a>
+
+           {% endif%} 
+
+
+
+       </div>
+  </div>
+</div>
+{% endblock %}
