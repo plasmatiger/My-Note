@@ -1,0 +1,25 @@
+Profilepic - file type restriction
+	- pic display
+
+########
+Mynote - homepage
+#######
+
+Documents - twice uploading -> random extension for name
+
+Date Modified, Size
+
+Delete -> for documents [for NOtes done]
+Edit
+
+Search - for documents [for NOtes done]
+	 	- Partial Search 
+
+redirecting webpages - extend block - should combine with homepages and remove uselless html pages
+    
+                                            
+username = request.user.username
+user = User.objects.get(username=username)
+ob = Notes.objects.filter(UserName = user)                                        
+                                            
+                                        

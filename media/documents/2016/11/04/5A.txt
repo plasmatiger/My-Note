@@ -1,0 +1,58 @@
+======================Cybersecurity============================
+Introduction: We shop online.  We work online.  We play online.  We live online.  More and more, our lives depend on online,digital  services.   Almost  everything  can  be  done  online  –  from  shopping  and  banking  to  socialising  and  cardmaking – and all of this makes the internet, also known as cyberspace, an attractive target for criminals.We all have a responsibility to protect services from being maliciously disrupted or misused, through our vigilance,through our own security measures and through reporting events when they arise.In any discussion of security, there are some basic terms that will be used a lot.  This step will introduce you tothe basic terminology of information security.
+
+CIA: The guiding principles behind information security are summed up in the acronym CIA (and we’re pretty sure there’s a joke in there somewhere), standing for confidentiality, integrity and availability.
+
+We want our information to:
+
+1.be read by only the right people (confidentiality)
+2.only be changed by authorised people or processes (integrity)
+3.be available to read and use whenever we want (availability).
+
+Malware: There are a number of terms associated with software that attempts to harm computers in different ways. Collectively these are known as ‘malware’ (a contraction of malicious software).Depending on what the malware does, different terms are used in relation to it. For example:
+
+1. Ransomware is malware that demands payment in order to refrain from doing some harmful action or to undo the effects of the harmful action
+2.Spyware records the activities of the user, such as the passwords they type into the computer, and transmits this information to the person who wrote the malware
+3.Botnets are created using malware that allows an attacker to control a group of computers and use them to gather personal information or launch attacks against others, such as for sending spam emails or flooding a website with so many requests for content that the server cannot cope, called a denial-of-service attack.
+    
+=======================Authentiction=============================
+Millions of people use online services every day, and it is crucial that these systems prevent users from accessing each other’s information. To do this, they need a way of uniquely identifying each user in a way that prevents users from impersonating each other. This is called identification and authentication.Passwords and passcodes are the most common way of authenticating users.
+An ideal password must satisfy two conflicting aims. It should be:
+1. memorable enough that the user can recall it without writing it down
+2. long enough and unique enough that no one else can guess it.
+============================Malware===============================
+Malware can get into a computer through a variety of mechanisms, most of which involve exploiting a combination of human and technical factors.There are many reasons why malware is created including intellectual curiosity, financial gain or corporate espionage.The majority of modern malware has been designed with malicious intent; to cause damage to a computer’s operating system or its data; or to steal information from a user, or increasingly, from online advertisers.
+
+Virus: The best-known type of malware is probably the virus, although many pieces of malware are called viruses they are nothing of the sort.
+A virus is a piece of software that has been written to insert copies of itself into applications and data and onto crucial parts of a computer’s hard disk. Viruses are said to be self-replicating programs and date back as far as the early 1970s, but they only became well known with the advent of microcomputers and later, the internet.
+Worm: Another type of self-replicating malware is the worm; like a virus it is designed to make copies of itself; but unlike a virus, a worm is a standalone application.
+There are four stages in a worm attack:
+1. The first stage is when the worm probes other machines looking for a vulnerability that can be exploited to copy itself to.
+2. The next stage is to penetrate the vulnerable machine by performing the operations for exploiting the vulnerability. For example, the worm might detect an open network connection, through which it can get the remote machine to execute arbitrary instructions.
+3. In the third stage, the worm will download itself to the remote machine, and store itself there. This is often called the ‘persist’ stage.
+4. In the next stage, the worm will propagate itself by picking new machines to attempt to probe.
+Trojan: The final major type of malware is the Trojan (or Trojan horse); named after the wooden horse that supposedly smuggled Greek soldiers into the ancient city of Troy.
+A Trojan disguises itself as an entirely legitimate program (such as a screensaver), but behind the scenes it is causing damage – perhaps allowing someone else to gain control of the computer, copying personal information, deleting information, monitoring keystrokes, or using email software to pass itself on to other computers. Unlike viruses and worms, Trojans are not self-replicating, they rely on their apparent usefulness to spread between computers.
+
+=========================Internet================================
+The internet is not a single entity with a single owner; instead it comprises a hierarchy of individual networks that have been connected to one another. These networks range from local area networks (LANs) that can be found in many businesses and universities to the telephone and data networks that link cities and countries by fibre optic cables and satellite links.
+
+Datagram: When data, such as a picture, movie or a document is sent over the internet, it is not sent as a single chunk. Instead it is split up into small, uniformly sized blocks called ‘datagrams’, also sometimes called ‘packets’.
+=========================Cryptography===========================
+Cryptography is a specialised area of mathematics concerned with protecting information so that it can be transmitted and received securely even when there is a risk that a hostile third party might intercept or modify the data. You will recognise it as it’s been mentioned before as a technique that can help with protecting information.
+There have been many applications of cryptography throughout history, ranging from simple ciphers used by Julius Caesar to send military orders to his generals, to the more sophisticated medieval ciphers that withstood most attacks until the late 19th century and the famous Enigma codes of World War II.
+Term in Cryptography:
+1. Plaintext: Information that can be directly read by humans or a machine (this article is an example of plaintext). Plaintext is a historic term pre-dating computers, when encryption was only used for hardcopy text, nowadays it is associated with many formats including music, movies and computer programs
+2. Ciphertext: The encrypted data
+3. A cipher – the mathematics (or algorithm) responsible for turning plaintext into ciphertext and reverting ciphertext to plaintext. (You might also see the word ‘code’ used. There is a technical difference between the two but it need not concern us now.)
+4. Encryption : The process of converting plaintext to ciphertext (occasionally you may see it called ‘encipherment’)
+5. decryption – the process of reverting ciphertext to plaintext (occasionally ‘decipherment’).
+    
+6. Encryption keys: Keys are pieces of information that determine the output from an encryption (or decryption) process. A single cipher can produce an almost limitless number of different outputs with different key values; allowing secure communication even if the cipher itself is known to hostile third parties.
+
+==========================Network Security=======================
+Firewall: In a building, a firewall is a reinforced masonry wall that is designed to prevent a fire spreading through the structure, allowing people time to escape. Similarly, in a computer network, a firewall is a barrier that blocks dangerous communications from spreading across a network, either from the outside world into a local network, or from one part of a local network to another.
+Most operating systems come with a firewall that is installed as part of an operating system.
+VPN: VPNs are typically implemented using dedicated network devices (sometimes this might be a firewall), and software. There are two parts to the software; the first, called a VPN client, is installed on the computer of anyone who wants to be part of the VPN. The client is responsible for connecting users to the VPN so that it can send and receive information in a secure manner with, in this example, a corporate network. The second part is the VPN server which is part of a dedicated network device, usually located on the perimeter of an organisation’s network. The server software typically performs the authentication of users and route traffic to the corporate network.
+The VPN path or tunnel between the VPN client and the VPN server relies on encryption to protect the data from interception or modification as it travels across the internet.
+Honeypots: Sometimes network administrators want to study attacks, either so the attackers’ methods can be understood more fully and countermeasures prepared, or as part of an investigation that might lead to civil or criminal prosecutions.
