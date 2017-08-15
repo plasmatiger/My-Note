@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-6 container-fluid" style="width:75%;">
+        <h3>{{ request.user.username }}'s Notes</h3>
+            {% if Notes %}
+            {% for note in Notes %}
+                <div class="col-sm-4">
+                    <a href="{% url 'notes:displaynote' note.pk %}" >
+                    <div class="thumbnail">
+                        <div class="caption" style="display: block; text-align: center;">
+                            <h5>{{ note.Tag }}</h5>
+                            <!-- <h4>{{ note.Note }}</h4> -->
+                        </div>
+                    </div></a>
+                </div>
+                
+                {% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}
+            {% endfor %}
+        {% else %}
+            <div class="col-sm-12">
+                <br>
+                <a href="{% url 'notes:enterNoteform' %}">
+                    <button type="button" class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus"></span>&nbsp; Add a Note
+                    </button>
+                </a>
+            </div>
+        {% endif %}
+        </div>
+
+        <div class="col-xs-6 container-fluid" style="width : 24%;">
+
+            {% if Event %}
+            <h3 style="text-align: center;">Upcoming Events</h3>
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table" style="border-style: none;">
+                            <thead style="border-style: none;">
+                                <tr style="border-style: none;">
+                                    <th style="border-style: none; text-align: center;">Date</th>
+                                    <th style="border-style: none; text-align: center;">Event</th>
+                                </tr>
+                            </thead>
+                            <tbody style="border-style: none;">
+                                {% for event in Event %}
+                                    <tr style="border-style: none;" class="shadow-down">
+                                        <td style="border-style: none;">{{ event.start_date }}</br> to </br>{{ event.end_date }}
+                                        </td>
+                                        <td style="border-style: none;">{{ event.Tag }}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+
+              <h3 style="text-align: center;"> No Upcoming events!!!</h3>
+              <h4 style="text-align: center;"><a href="{% url 'notes:enterevent' %}"> Create one!!!</a></h4>
+
+           {% endif%} 
+
+
+        </div> 
+
+        
+    </div>
+</div>
+{% endblock %}

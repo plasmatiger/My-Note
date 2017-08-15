@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+	<div>
+		{% for x in me %}
+			<h3>{{x.UserName}}</h3>
+			<h3>{{x.FullName}}</h3>
+			<h3>{{x.Gender}}</h3>
+			<h3>{{x.BirthDate}}</h3>
+			<h3>{{x.Email}}</h3>
+		{% endfor%}
+	</div>
+{% endblock %}

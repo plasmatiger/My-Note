@@ -1,0 +1,18 @@
+{% extends 'base_visitor.html' %}
+{%  block body %}	
+		<div class="container-fluid">
+			
+
+			<h1 style="font-size: 20em; color: #4286f4; text-align:center; margin-bottom:50px;">MyNote</h1>
+			<hr >
+			<div class="row">
+				<div class="container-fluid col-xs-6" style="text-align:center;">
+					<a href="{% url 'login_logout:register' %}"><div class="shadow" style="background-color:white; border-style:solid; border-color: grey; border-radius: 5px; border-width:1px; height: 100px;"><h3>Sign Up!!</h3>
+					<h5>Create a free user account here!!</h5></div></a>
+				</div>
+				<div class="container-fluid col-xs-6" style="text-align:center;">
+					<a href="{% url 'login_logout:login_user' %}"><div class="shadow" style="background-color:white; border-style:solid; border-color: grey; border-radius: 5px; border-width:1px; height: 100px;"><h1>Login!!</h1></div></a>
+				</div>
+				</div>
+			</div>
+{% endblock %}

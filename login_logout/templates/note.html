@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block body%}
+	{% if notes %}
+    	<div class="row">
+                <div class="col-sm-12">
+                    <h3>Your Notes</h3>
+                </div>
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <table class="table" style="border-style:none;">
+                                <thead style="border-style:none;">
+                                    <tr style="border-style:none;">
+                                        <th style="text-align: center;">Tag</th>
+                                        <th style="text-align: center;">Note</th>
+                                        <th style="text-align: center;">Created Date</th>
+                                        <th style="text-align: center;">Last Modified</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for note in notes %}
+                                        <tr style="border-style:none; margin: auto; width: 15px;">
+                                            <td style="border-color: lightgrey;"><a href="{% url 'notes:displaynote' note.pk %}"><div>{{ note.Tag }}</div></a></td> 
+                                            <td style="border-color: lightgrey;">{{ note.Note | truncatechars:40 }}</td>
+                                            <td style="border-color: lightgrey;">{{ note.my_date }}</td>
+                                            <td style="border-color: lightgrey;">{{ note.modified_date }}</td>
+                                            <td style="border-color: lightgrey;">
+                                                <a href="{% url 'notes:deleteNote' note.pk %}">
+                                                <button type="button" class="btn btn-danger">
+                                                    Delete
+                                                </button>
+                                                </a>
+                                            </td>
+                                            <td style="border-color: lightgrey;">
+                                                <a href="{% url 'notes:editNoteform' note.pk %}">
+                                                <button type="button" class="btn ">
+                                                    Edit
+                                                </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    }
+    {% else %}
+        <div class="col-sm-12">
+                <br>
+                <a href="{% url 'notes:enterNoteform' %}">
+                    <button type="button" class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus"></span>&nbsp; Add a Note
+                    </button>
+                </a>
+            </div>
+
+    {% endif %}
+{% endblock %}

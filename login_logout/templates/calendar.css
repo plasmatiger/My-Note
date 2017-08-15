@@ -1,0 +1,14 @@
+.today{
+  background-color: blue;
+}
+.filled{
+  background-color: green;
+}
+td{
+  height: 20px;
+  width: 20px;
+}
+
+body{
+  background-color: blue;
+}
