@@ -1,0 +1,286 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"boe",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border-spacing"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"bo",
+				"border-style"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ima",
+				"image_name"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"User",
+				"Username"
+			],
+			[
+				"Use",
+				"UserName"
+			],
+			[
+				"u",
+				"username"
+			],
+			[
+				"login",
+				"login_logout"
+			],
+			[
+				"for",
+				"forms"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 112.0,
+		"last_filter": "menu",
+		"selected_items":
+		[
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"file",
+				"File: New View into File"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/views.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/static/calendar.css",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/views.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/calendar.html",
+		"/media/xlr8666/Movies/payingup.txt",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/css/calendar.css",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/forms.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/models.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/urls.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/fillUserData.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/register.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/base.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/models.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/urls.py",
+		"/home/xlr8666/Downloads/MicroSoft Office 2007 With Key -THADOGG/Serial.txt",
+		"/home/xlr8666/Documents/cs252/pyproj/music/urls.py",
+		"/home/xlr8666/Documents/cs252/pyproj/music/views.py",
+		"/home/xlr8666/Documents/cs252/pyproj/music/templates/music/my_template.html",
+		"/home/xlr8666/Documents/cs252/project/cs252/myapp/templates/login.html",
+		"/home/xlr8666/Documents/cs252/pyproj/calender/views.py",
+		"/home/xlr8666/Documents/cs252/pyproj/music/templates/music/login.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/forms.py",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/listDocs.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/image.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/hello.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/enterNote.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/saved.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/upload.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/notes/templates/printNote.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/index.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/document.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/event.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/login.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/login_logout/templates/base_visitor.html",
+		"/home/xlr8666/CS252_Project/cs252_project/g49/g49/urls.py",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (14).torrent",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (12).torrent",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (16).torrent",
+		"/home/xlr8666/hello.cpp",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (8).torrent",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (9).torrent",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (6).torrent",
+		"/home/xlr8666/Downloads/[kickass.cd.prx2.unblocksites.co] (4).torrent",
+		"/home/xlr8666/Documents/cs252/pyproj/website/urls.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/signup/templates/signupagain.html",
+		"/home/xlr8666/Documents/cs252/project/cs252/signup/templates/filluserdata.html",
+		"/home/xlr8666/Documents/cs252/project/cs252/signup/models.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/signup/views.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/signup/forms.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/signup/templates/signup.html",
+		"/home/xlr8666/Documents/cs252/project/cs252/myapp/models.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/myapp/forms.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/myapp/views.py",
+		"/home/xlr8666/Documents/cs252/project/cs252/myapp/templates/loggedin.html",
+		"/home/xlr8666/Documents/cs252/project/cs252/cs252/urls.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"WorkoutCalendar",
+			"calendarr",
+			"index"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "calendar.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
